@@ -1,3 +1,6 @@
 classes I removed:
 - Utils.h.cpp
 - FileGenerator.h
+
+Now (22.1 , 21:30)
+it's working mush (10 clients)
