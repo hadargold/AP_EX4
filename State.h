@@ -3,10 +3,22 @@
 
 #include <string>
 #include <vector>
-#include "Enumes.h"
 
 namespace server_side {
-    
+    enum Direction {
+
+        NotSet = 0,
+        Start = 1,
+        Left = 2,
+        Up = 3,
+        Right = 4,
+        Down = 5,
+
+    };
+}
+
+namespace server_side {
+
     class State
     {
 
@@ -39,6 +51,7 @@ namespace server_side {
                 ret.push_back(right);
             return ret;
         }
+
     };
 
 
@@ -51,6 +64,7 @@ namespace server_side {
         int developedVertices;
 
     };
+
 }
 
 #endif //SERVERAPPLICATION_STATE_H
