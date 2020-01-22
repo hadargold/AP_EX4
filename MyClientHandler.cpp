@@ -1,6 +1,5 @@
 #include "MyClientHandler.h"
-#include "SearcherSolver.h"
-#include "AStar.h"
+#include "SearchSolver.h"
 #include "MatrixGraph.h"
 
 
@@ -12,7 +11,7 @@ server_side::MyClientHandler::MyClientHandler(
 void server_side::MyClientHandler::handleClient(int socketID) {
 
     string curLine;
-    
+
     string allProb;
 
     //whole info including src and dst
@@ -22,7 +21,7 @@ void server_side::MyClientHandler::handleClient(int socketID) {
 
         allProb += (curLine + "\n");
 
-        auto splitLine = Utils::explode(curLine, CELL_SPLIT_CHAR);
+        auto splitLine = ICacheManager::explode(curLine, CELL_SPLIT_CHAR);
         vector<int> row;
 
         for (auto const &cell : splitLine){
