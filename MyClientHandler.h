@@ -28,7 +28,6 @@ namespace server_side{
         MyClientHandler(ISolver<ISearchable *, SearchAlgo> *solver, ICacheManager *cacheManager);
 
         void handleClient(int socketID) override;
-
     };
 }
 
