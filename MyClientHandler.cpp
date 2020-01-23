@@ -1,6 +1,6 @@
 #include "MyClientHandler.h"
 #include "SearchSolver.h"
-#include "MatrixGraph.h"
+#include "Matrix.h"
 
 
 server_side::MyClientHandler::MyClientHandler(
