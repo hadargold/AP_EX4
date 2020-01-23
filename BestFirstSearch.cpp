@@ -1,6 +1,6 @@
 #include <queue>
 #include "BestFirstSearch.h"
-#include "MatrixGraph.h"
+#include "Matrix.h"
 
 using namespace std;
 
