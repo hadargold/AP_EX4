@@ -1,5 +1,5 @@
 #include "BFS.h"
-#include "MatrixGraph.h"
+#include "Matrix.h"
 
 server_side::SearchAlgo server_side::BFS::search(server_side::ISearchable *searchable) {
     SearchAlgo searchAlgo;
