@@ -5,7 +5,6 @@
 #include <mutex>
 
 #include "ICacheManager.h"
-#include "Utils.h"
 #define CACHE "cache_file.txt"
 #define SPLIT_CHAR '$'
 
