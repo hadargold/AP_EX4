@@ -5,8 +5,6 @@
 #include <mutex>
 
 #include "ICacheManager.h"
-#define CACHE "cache_file.txt"
-#define SPLIT_CHAR '$'
 
 namespace server_side{
 
@@ -23,7 +21,6 @@ namespace server_side{
         void saveToCache(std::string key, std::string solution) override;
 
         // appends to a given file name. creates him if he haven't been created yet
-
         static void appendToFile(std::string fileName, std::string dataToAppend){
             std::fstream stream;
             stream.open(fileName, std::ios::app | std::ios::ate);

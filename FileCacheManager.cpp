@@ -1,13 +1,15 @@
 
 #include <fstream>
+#include <cstring>
 #include "FileCacheManager.h"
+using namespace std;
 
 bool server_side::FileCacheManager::isExistsInCache(std::string key) {
 
     try {
         loadFromCache(key);
         return true;
-    }catch (...){ // no file exist or key doesnt exists in cache
+    }catch (...){
         return false;
     }
 }
@@ -15,20 +17,23 @@ bool server_side::FileCacheManager::isExistsInCache(std::string key) {
 std::string server_side::FileCacheManager::loadFromCache(std::string key) {
 
     mut.lock();
+    ifstream t("cache.txt");
+    string str((std::istreambuf_iterator<char>(t)),
+                    std::istreambuf_iterator<char>());
 
-    std::string fileContent = ICacheManager::readAllFileContent(CACHE);
+    char* input = (char*) str.c_str();
+    char *token = std::strtok(input, "$");
+    std::vector<string> splitValue;
 
-    std::vector<std::string> afterSplit = ICacheManager::explode(fileContent, SPLIT_CHAR);
-
-    std::map<std::string, std::string> cacheMap;
-
-    auto it = afterSplit.begin();
-
-    for(;it != afterSplit.end(); it += 2 ) {
-        std::string currKey = *it;
-        std::string currValue = *(it + 1);
+    while (token != NULL) {
+        splitValue.emplace_back(token);
+        token = std::strtok(NULL, "$");
+    }
+    map<string, string> cacheMap;
+    for(std::size_t i =0 ; i < splitValue.size() ; i = i+2){
+        std::string currKey =  splitValue[i];
+        std::string currValue =  splitValue[i+1];
         cacheMap.insert(std::pair<std::string, std::string>(currKey, currValue));
-
     }
 
     auto valueIterator = cacheMap.find(key);
@@ -39,18 +44,18 @@ std::string server_side::FileCacheManager::loadFromCache(std::string key) {
     if(valueIterator != cacheMap.end()){
         return valueIterator->second;
     } else {
-        throw "key does not exist in cache! check for existence first";
+        throw "key does not exist in cache";
     }
 }
 
 
 void server_side::FileCacheManager::saveToCache(std::string key, std::string solution) {
-
+    const char splitChar ='$';
     mut.lock();
 
-    std::string dataToSave = key + SPLIT_CHAR + solution + SPLIT_CHAR;
+    std::string dataToSave = key + splitChar + solution + splitChar;
 
-    FileCacheManager::appendToFile(CACHE, dataToSave);
+    FileCacheManager::appendToFile("cache.txt", dataToSave);
 
     mut.unlock();
 

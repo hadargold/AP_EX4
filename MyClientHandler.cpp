@@ -17,11 +17,26 @@ void server_side::MyClientHandler::handleClient(int socketID) {
     //whole info including src and dst
     vector<vector<int>> matrixInfo;
 
-    while (END != (curLine = TcpServer::readLine(socketID))){
+    while ("end"!= (curLine = TcpServer::readLine(socketID))){
 
         allProb += (curLine + "\n");
 
-        auto splitLine = ICacheManager::explode(curLine, CELL_SPLIT_CHAR);
+        std::string buff{""};
+        std::vector<std::string> splitLine;
+        const char splitChar = ',';
+        for (auto n : curLine)
+        {
+            if (n != splitChar)
+                buff += n;
+            else if (n == splitChar && buff != "")
+            {
+                splitLine.push_back(buff);
+                buff = "";
+            }
+        }
+        if (buff != "")
+            splitLine.push_back(buff);
+
         vector<int> row;
 
         for (auto const &cell : splitLine){
@@ -49,7 +64,7 @@ void server_side::MyClientHandler::handleClient(int socketID) {
     for(; it != matrixInfo.end() - 2; it++)
         matrix.push_back(*it);
 
-    auto graph = MatrixGraph(matrix, src, dst);
+    auto graph = Matrix(matrix, src, dst);
 
     std::string solutionString;
 
