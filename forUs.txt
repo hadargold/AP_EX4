@@ -4,3 +4,5 @@ classes I removed:
 
 Now (22.1 , 21:30)
 it's working mush (10 clients)
+
+I changed MatrixGraph to Matrix, maybe cause problems
