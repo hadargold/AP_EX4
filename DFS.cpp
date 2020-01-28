@@ -1,3 +1,7 @@
+//
+// Created by hadar on 1/23/20.
+//
+#include <iostream>
 #include "DFS.h"
 
 server_side::SearchAlgo server_side::DFS::search(server_side::ISearchable *searchable) {
@@ -8,7 +12,6 @@ server_side::SearchAlgo server_side::DFS::search(server_side::ISearchable *searc
 
     goalState = searchable->getGoalState();
     recursiveSearch(searchable->getInitialState());
-
     return this->searchAlgo;
 
 }

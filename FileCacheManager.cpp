@@ -1,4 +1,6 @@
-
+//
+// Created by yuval on 1/23/20.
+//
 #include <fstream>
 #include <cstring>
 #include "FileCacheManager.h"
@@ -39,8 +41,6 @@ std::string server_side::FileCacheManager::loadFromCache(std::string key) {
     auto valueIterator = cacheMap.find(key);
 
     mut.unlock();
-
-    //iterator will be the end if key doesnt exists
     if(valueIterator != cacheMap.end()){
         return valueIterator->second;
     } else {

@@ -1,3 +1,6 @@
+//
+// Created by hadar on 1/21/20.
+//
 #ifndef SERVERAPPLICATION_STATE_H
 #define SERVERAPPLICATION_STATE_H
 

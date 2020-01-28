@@ -1,4 +1,8 @@
+//
+// Created by hadar on 1/23/20.
+//
 #include <queue>
+#include <iostream>
 #include "BestFirstSearch.h"
 #include "Matrix.h"
 

@@ -1,3 +1,6 @@
+//
+// Created by hadar on 1/21/20.
+//
 #ifndef SERVERAPPLICATION_SEARCHSOLVER_H
 #define SERVERAPPLICATION_SEARCHSOLVER_H
 

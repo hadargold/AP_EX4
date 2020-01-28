@@ -1,3 +1,6 @@
+//
+// Created by hadar on 1/21/20.
+//
 #include "Matrix.h"
 
 server_side::Matrix::Matrix(vector<vector<int>> givenMatrix, std::pair<int, int> src,
@@ -25,8 +28,6 @@ server_side::Matrix::Matrix(vector<vector<int>> givenMatrix, std::pair<int, int>
 
             currentState->isMarked = false;
 
-            // TODO - SWITCH TO IF !!!!!!!!!!!!!!!!!!!
-
             currentState->isInfinity = currentState->weigth == -1 ? true : false;
 
             //up != null
@@ -43,7 +44,6 @@ server_side::Matrix::Matrix(vector<vector<int>> givenMatrix, std::pair<int, int>
 
             currentState->row_index = i;
             currentState->col_index = j;
-
 
             //this is the start state
             if(i == src.first && j == src.second){

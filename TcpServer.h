@@ -1,3 +1,6 @@
+//
+// Created by yuval on 1/21/20.
+//
 #ifndef SERVERAPPLICATION_TCPSERVER_H
 #define SERVERAPPLICATION_TCPSERVER_H
 
@@ -33,7 +36,7 @@ namespace server_side {
             n = write(socketId, message.c_str(), message.length());
 
             if (n < 0) {
-                perror("ERROR writing to socket");
+                perror("ERROR");
                 exit(1);
             }
         };

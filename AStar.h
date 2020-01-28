@@ -1,3 +1,7 @@
+//
+// Created by hadar on 1/23/20.
+//
+
 #ifndef SERVERAPPLICATION_ASTARBLOG_H
 #define SERVERAPPLICATION_ASTARBLOG_H
 

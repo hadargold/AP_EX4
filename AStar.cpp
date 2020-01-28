@@ -1,5 +1,10 @@
+//
+// Created by hadar on 1/23/20.
+//
+
 #include <queue>
 #include <algorithm>
+#include <iostream>
 #include "AStar.h"
 #include "PriorityQueue.h"
 
@@ -9,7 +14,6 @@ namespace server_side {
     }
 
     server_side::SearchAlgo server_side::AStar::search(server_side::ISearchable *searchable) {
-
         searchAlgo.developedVertices = 0;
         searchAlgo.shortestPathRoute = "";
         searchAlgo.shortestPathWeight = 0;
@@ -52,11 +56,7 @@ namespace server_side {
 
         }
 
-        //reconstruction
-
         std::vector<State *> path;
-        
-        // no route
         if (current != goal){
             searchAlgo.shortestPathRoute = "";
             searchAlgo.shortestPathWeight = -1;
@@ -75,7 +75,6 @@ namespace server_side {
         path.push_back(start); // optional
         std::reverse(path.begin(), path.end());
 
-        //now i have the path. reconstruction from vector:
 
         std::string step;
 
@@ -102,7 +101,6 @@ namespace server_side {
 
         searchAlgo.shortestPathRoute =
                 searchAlgo.shortestPathRoute.substr(0, searchAlgo.shortestPathRoute.length() - 2);
-
         return searchAlgo;
 
     }

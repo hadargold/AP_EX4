@@ -1,5 +1,5 @@
 //
-// Created by yuval on 1/23/20.
+// Created by yuval on 1/19/20.
 //
 
 
@@ -34,14 +34,6 @@ void server_side::MyTestClientHandler::handleClient(int socket) {
                         }
                         ans = ans+"\n";
                         ssize_t n;
-
-                        // Send message
-//                        n = write(socket, ans.c_str(), ans.length());
-//
-//                        if (n < 0) {
-//                            close(socket);
-//                            return;
-//                        }
 
                         problem = "";
                     }

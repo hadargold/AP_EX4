@@ -2,7 +2,6 @@
 // Created by yuval on 1/23/20.
 //
 
-
 #include <vector>
 #include <iostream>
 #include <string>
@@ -31,12 +30,9 @@ using std::to_string;
 int main(int argc, char **argv) {
 
     if(argc < 1) throw "usage: <executable> <port>";
-
-    int port = 5600;
-    //int port = std::stoi(argv[1]);
+    int port = std::stoi(argv[1]);
 
     auto solver = new SearchSolver(new AStar());
-
     auto cacheManager = new FileCacheManager();
 
     IClientHandler* clientHandler = new MyClientHandler(solver, cacheManager);

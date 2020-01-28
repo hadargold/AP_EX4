@@ -1,3 +1,6 @@
+//
+// Created by yuval on 1/20/20.
+//
 #ifndef SERVERAPPLICATION_ISEARCHER_H
 #define SERVERAPPLICATION_ISEARCHER_H
 

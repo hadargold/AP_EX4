@@ -1,9 +1,12 @@
+//
+// Created by hadar on 1/23/20.
+//
+#include <iostream>
 #include "BFS.h"
 #include "Matrix.h"
 
 server_side::SearchAlgo server_side::BFS::search(server_side::ISearchable *searchable) {
     SearchAlgo searchAlgo;
-
     searchAlgo.developedVertices = 0;
     searchAlgo.shortestPathRoute = "";
     searchAlgo.shortestPathWeight = 0;
@@ -100,6 +103,5 @@ server_side::SearchAlgo server_side::BFS::search(server_side::ISearchable *searc
     }
     searchAlgo.shortestPathRoute =
             searchAlgo.shortestPathRoute.substr(0, searchAlgo.shortestPathRoute.length() - 2);
-
     return searchAlgo;
 }

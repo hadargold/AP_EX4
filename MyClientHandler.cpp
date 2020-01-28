@@ -1,3 +1,6 @@
+//
+// Created by hadar on 1/21/20.
+//
 #include "MyClientHandler.h"
 #include "SearchSolver.h"
 #include "Matrix.h"
@@ -14,7 +17,6 @@ void server_side::MyClientHandler::handleClient(int socketID) {
 
     string allProb;
 
-    //whole info including src and dst
     vector<vector<int>> matrixInfo;
 
     while ("end"!= (curLine = TcpServer::readLine(socketID))){
