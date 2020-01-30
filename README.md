@@ -28,7 +28,7 @@ The parameters we chose to consider to compare are the cost of the path and
 We chose to examine the following algorithms:
 @ BFS
 @ DFS
-@ Beset First Search
+@ Best First Search
 @ A-star
 
 As we knew the ranges of the graphs are to be of range 10X10 - 50X50, we implemented them
