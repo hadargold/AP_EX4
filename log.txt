@@ -1,0 +1,149 @@
+
+commit 9deb905e8be989b248b79f974e9733ac7922c03a
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com >
+Date:   Tue Jan 28 08:11:54 2020 -0800
+
+working - port from args
+
+commit 9deb905e8be989b248b79f974e9733ac7922c03a
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com >
+Date:   Thu Jan 23 05:43:13 2020 -0800
+
+parallel, serial and cache updated
+
+commit 11a1653d807b1e8dbbb8e27c2cf8279de7459148
+Author: hadargold <hadargold1@gmail.con>
+Date:   Thu Jan 23 04:02:48 2020 -0800
+
+23.1
+
+commit affa2341cf2b90b28c58ece813496f5458c1196e
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com>
+Date:   Thu Jan 23 04:50:12 2020 -0800
+
+  changes
+
+commit affa2341cf2b90b28c58ece813496f5458c1196e
+Author: hadargold <hadargold1@gmail.con >
+Date:   Wed Jan 22 09:20:12 2020 -0800
+
+    
+22.1 21:20
+
+
+commit affa2341cf2b90b28c58ece813496f5458c1196e
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com>
+Date:   Tue Jan 21 04:50:12 2020 -0800
+
+    test
+
+
+commit 3491653d807b1e8dbbb8e27c2cf8279de7459148
+Author: hadargold <hadargold1@gmail.con>
+Date:   Wed Jan 22 09:06:18 2020 -0800
+
+22.1
+
+commit 11a1653d807b1e8dbbb8e27c2cf8279de7459349
+Author: hadargold <hadargold1@gmail.con>
+Date:   Wed Jan 22 04:02:48 2020 -0800
+
+22.1
+
+
+commit 8dba2341cf2b90b28c58ece813496f5458c1196e
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com>
+Date:   Tue Jan 21 04:50:12 2020 -0800
+
+    main
+
+commit 11a1653d807b1e8dbbb8e27c2cf8279de7459148
+Author: hadargold <hadargold1@gmail.con>
+Date:   Thu Jan 21 08:12:48 2020 -0800
+
+21.1
+
+commit b90a2341cf2b90b28c58ece813496f5458c1196e
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com>
+Date:   Sun Jan 19 02:38:02 2020 -0800
+
+   Added algos
+
+commit affa2341cf2b90b28c58ece813496f5458c1196e
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com>
+Date:   Thu Jan 16 04:50:12 2020 -0800
+
+interfaces
+
+
+commit 5d0dfb027008a678573eda3b8d611c60f2ae4562
+Author: hadargold <hadargold1@gmail.con>
+Date:   Sun Jan 12 03:18:44 2020 -0800
+
+    12.1 
+
+commit 7cdcaa5b9b237344b763a5c74ac87ef83690884a
+Author: hadargold <hadargold1@gmail.con>
+Date:   Sat Jan 11 09:04:37 2020 -0800
+
+11.1
+
+commit a2744377c400234a773b26ddb0818a061203559f
+Author: hadargold <hadargold1@gmail.con>
+Date:   Thu Jan 09 07:21:27 2020 -0800
+
+    hadar
+
+commit 46d3776fd3bd0392e3cafefed0da474fb5bdf79e
+Author: hadargold <hadargold1@gmail.con>
+Date:   Thu Jan 09 07:17:41 2020 -0800
+
+    hadar
+
+commit cfcf300aa0d0a3450ae06535a44d293c3b735a61
+Author: hadargold <50302613+hadargold@users.noreply.github.com>
+Date:   Thu Jan 09 04:53:41 2020 -0800
+
+    Add files via upload
+
+commit 8e484464f79be129602f0e320547a64e8fe35ad3
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com>
+Date:   Thu Jan 09 04:51:59 2020 -0800
+
+    test
+
+commit affa2341cf2b90b28c58ece813496f5458c1196e
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com>
+Date:   Thu Jan 09 04:50:12 2020 -0800
+
+    test
+
+commit 1b4a5bb31387a0d44aeb7b6502ec4ad24b271e74
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com>
+Date:   Thu Jan 09 04:45:33 2020 -0800
+
+    test collaborator
+
+commit eb651745bf59089e70d0e676730a519803babdd4
+Author: yuval sirotkin <yuval.sirotkin0@gmail.com>
+Date:   Thu Jan 09 04:43:20 2020 -0800
+
+    test collaborator
+
+commit 7ac4dc9615d4e218a88115072cf359d5fd282825
+Author: hadargold <50302613+hadargold@users.noreply.github.com>
+Date:   Thu Jan 09 02:14:46 2020 -0800
+    
+    Check again
+
+commit acf1d7c537d84abb9f02190f9d88db7fb4793966
+Author: hadargold <50302613+hadargold@users.noreply.github.com>
+Date:   Wed Jan 08 15:04:44 2020 +0200
+    
+8.1 
+
+commit 11bd785b3a2f2a0289c091600eaa66a7d572f302
+Author: hadargold <50302613+hadargold@users.noreply.github.com>
+Date:   Wed Jan 08 14:56:57 2020 +0200
+
+   Initial commit
